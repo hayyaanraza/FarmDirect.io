@@ -1,0 +1,18 @@
+export default function demandAggregation(req, res) {
+  const orders = req.body.orders;
+
+  let demandLevel = "Low";
+
+  if (orders >= 50 && orders < 100) {
+    demandLevel = "Medium";
+  }
+
+  if (orders >= 100) {
+    demandLevel = "High";
+  }
+
+  return res.json({
+    orders: orders,
+    demand_level: demandLevel
+  });
+}
