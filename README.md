@@ -1,4 +1,4 @@
-# FarmDirect.io
+
 # FarmDirect – Predictive Agriculture Marketplace
 
 FarmDirect is an AI-powered hackathon project that uses **OnDemand’s agent platform** to match farmers and consumers **before crops are planted**.  
