@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // User inputs collection
+    match /userInputs/{inputId} {
+      allow read, write: if true; // For demo purposes - in production, add proper authentication
+    }
+    
+    // Agent outputs collection
+    match /agentOutputs/{outputId} {
+      allow read, write: if true;
+    }
+    
+    // Advisories collection
+    match /advisories/{advisoryId} {
+      allow read, write: if true;
+    }
+  }
+}
