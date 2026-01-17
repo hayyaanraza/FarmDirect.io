@@ -1,0 +1,28 @@
+{
+  "name": "agricopilot",
+  "version": "1.0.0",
+  "description": "AgriCoPilot - AI-Powered Multi-Agent Decision Intelligence for Farmers",
+  "scripts": {
+    "setup": "bash setup.sh",
+    "start": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "start:backend": "cd firebase && firebase emulators:start",
+    "deploy:functions": "cd firebase && firebase deploy --only functions",
+    "deploy:frontend": "cd firebase && firebase deploy --only hosting"
+  },
+  "keywords": [
+    "agriculture",
+    "ai",
+    "multi-agent",
+    "firebase",
+    "react",
+    "ondemand",
+    "hackathon"
+  ],
+  "author": "AgriCoPilot Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexfdz1301/type-1.git"
+  }
+}
